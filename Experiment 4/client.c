@@ -15,8 +15,7 @@ int main(int argc, char *argv[])
     len = sizeof(servaddr);
     /*UDP socket is created, an Internet socket address structure is filled with wildcard address & server’s well known port*/
     sd = socket(AF_INET, SOCK_DGRAM, 0);
-    if (sd < 0)
-    {
+    if (sd < 0) {
         perror("Cannot open socket");
         exit(1);
     }
@@ -25,8 +24,7 @@ int main(int argc, char *argv[])
     servaddr.sin_family = AF_INET;
     servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
     servaddr.sin_port = htons(5669);
-    while (1)
-    {
+    while (1) {
         printf("Enter Input data : \n");
         bzero(buff, sizeof(buff));
         /*Reads the message from standard input*/
