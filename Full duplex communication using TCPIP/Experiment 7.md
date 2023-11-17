@@ -16,7 +16,8 @@ Server:<br/>
 - Accept connection request from the Client using accept function.
 - Fork the process to receive message from the client and print it on the console.
 - Read message from the console and send it to the client.
-<br/>
+
+
 Client:<br/>
 - Include the necessary header files.
 - Create a socket using socket function with family AF_INET, type as SOCK_STREAM.
