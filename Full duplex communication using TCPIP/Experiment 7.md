@@ -1,13 +1,13 @@
-Aim:
+Aim:<br/>
 There are two hosts, Client and Server. Both the Client and the Server exchange message i.e. they send messages to and receive message from the other. There is a two way communication between them.
 
-TECHNICAL OBJECTIVE:
+TECHNICAL OBJECTIVE:<br/>
 To implement a full duplex application, where the Client establishes a connection with the Server. The Client and Server can send as well as receive messages at the same time. Both the Client and Server exchange messages.
 
-Algorithm:
-
-Server:
-
+Algorithm:<br/>
+<br/>
+Server:<br/>
+<br/>
 • Include the necessary header files.
 • Create a socket using socket function with family AF_INET, type as SOCK_STREAM.
 • Initialize server address to 0 using the bzero function.
@@ -18,7 +18,7 @@ Server:
 • Fork the process to receive message from the client and print it on the console.
 • Read message from the console and send it to the client.
 
-Client:
+Client:<br/>
 • Include the necessary header files.
 • Create a socket using socket function with family AF_INET, type as SOCK_STREAM.
 • Initialize server address to 0 using the bzero function.
